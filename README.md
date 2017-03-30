@@ -13,4 +13,4 @@ ApiGateway 网站服务网关
 
 这样做网关的日志统计依然可以正常进行。
 
-![网关架构图](imgs/api_gateway.png =800x500)
+![api](imgs/api_gateway.png)
