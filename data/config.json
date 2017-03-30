@@ -1,0 +1,30 @@
+{
+  "clusters": [
+    {
+      "name": "account",
+      "services": [
+        {
+          "name":"account_node001",
+          "url": "http://account_node001.mydomain.com/api"
+        },
+        {
+          "name":"account_node002",
+          "url": "http://account_node002.mydomain.com/api"
+        }
+      ]
+    },
+    {
+      "name": "order",
+      "services": [
+        {
+          "name":"order_node001",
+          "url": "http://order_node001.mydomain.com/api"
+        },
+        {
+          "name":"order_node002",
+          "url": "http://order_node002.mydomain.com/api"
+        }
+      ]
+    }
+  ]
+}
