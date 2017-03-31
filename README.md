@@ -21,4 +21,5 @@ ApiGateway 网站服务网关看了很多实现，大多数的实现需要配置
     /service 集群和服务的实现
 
 **整体架构图**
+
 ![api](imgs/api_gateway.png)
