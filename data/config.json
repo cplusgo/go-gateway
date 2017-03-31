@@ -5,11 +5,11 @@
       "services": [
         {
           "name":"account_node001",
-          "url": "http://account_node001.mydomain.com/api"
+          "domain": "http://account_node001.mydomain.com"
         },
         {
           "name":"account_node002",
-          "url": "http://account_node002.mydomain.com/api"
+          "domain": "http://account_node002.mydomain.com"
         }
       ]
     },
@@ -18,11 +18,11 @@
       "services": [
         {
           "name":"order_node001",
-          "url": "http://order_node001.mydomain.com/api"
+          "domain": "http://order_node001.mydomain.com"
         },
         {
           "name":"order_node002",
-          "url": "http://order_node002.mydomain.com/api"
+          "domain": "http://order_node002.mydomain.com"
         }
       ]
     }

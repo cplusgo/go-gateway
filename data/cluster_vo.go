@@ -2,7 +2,7 @@ package data
 
 type ServiceVo struct {
 	Name string `json:"name"`
-	Url  string `json:"url"`
+	Domain  string `json:"domain"`
 }
 
 type ClusterVo struct {

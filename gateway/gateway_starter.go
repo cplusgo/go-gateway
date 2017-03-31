@@ -60,7 +60,7 @@ func (this *GatewayStarter) parseSetting() {
 
 	for _,cluster := range vo.Clusters {
 		for _, service := range cluster.Services {
-			this.clusterMapping.AddService(cluster.Name, service.Name, service.Url)
+			this.clusterMapping.AddService(cluster.Name, service.Name, service.Domain)
 		}
 	}
 }

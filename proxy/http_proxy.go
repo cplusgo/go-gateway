@@ -37,6 +37,7 @@ func (this *HttpProxy) ServeRequest(w http.ResponseWriter, req *http.Request, ra
 	for _, cookie := range req.Cookies() {
 		req.AddCookie(cookie)
 	}
+	rawurl = rawurl + req.RequestURI
 	req.RequestURI = ""
 	u, _ := url.Parse(rawurl)
 	req.URL = u
