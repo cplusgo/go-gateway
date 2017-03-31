@@ -24,6 +24,15 @@ func (this *Cluster) addService(name, url string) {
 	this.services = append(this.services, service)
 }
 
+/**
+ *根据连接数去负载均衡
+ */
 func (this *Cluster) serveRequest(w http.ResponseWriter, req *http.Request)  {
-	this.services[0].serveRequest(w, req)
+	var serviceImpl *Service = this.services[0]
+	for _, v := range this.services {
+		if serviceImpl.connectionNum > v.connectionNum {
+			serviceImpl = v
+		}
+	}
+	serviceImpl.serveRequest(w, req)
 }

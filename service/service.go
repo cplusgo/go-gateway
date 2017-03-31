@@ -16,5 +16,7 @@ type Service struct {
 }
 
 func (this *Service) serveRequest(w http.ResponseWriter, req *http.Request) {
+	this.connectionNum++
 	this.httpProxy.ServeRequest(w, req, this.url)
+	this.connectionNum--
 }
